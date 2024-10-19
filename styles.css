@@ -1,0 +1,265 @@
+/*
+  Add style rules for the body of a your webpage.
+  Note: These rules will be applied to all elements.
+*/
+body {
+    background-color: lightskyblue;
+    background-image: url('');
+    font-family: Garamond;
+    font-size: 16px;
+    color: black;
+    padding-top: 0;
+    padding-left: 0;
+    padding-right: 0;
+    padding-bottom: 5px;
+    margin-top: 0;
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+}
+
+h1 {
+    color:gold;
+    text-align:center;
+    font-size: 45px;
+}
+
+h2 {
+    color:gold;
+    font-weight: bold;
+    font-variant: small-caps;
+}
+
+h3 {
+  color:white;
+  font-size: 30px;
+  text-align: center;
+  font-weight: lighter;
+}
+
+h4{
+  color:white;
+
+}
+
+p {
+  color:ivory;
+}
+
+
+ul {
+  color:ivory;
+}
+
+
+button {
+  background-color:  #0061e8;
+  border: none;
+  color: white;
+  font-size: 16px;
+  text-align: center;
+  padding: 15px 32px;
+  cursor: pointer;
+}
+
+
+/* Select and style elements by class name or ID */
+.header-container {
+  display:flex;
+  flex-direction: column;
+  padding-top: 0px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+.header-item {
+  /* background: #0061e8; */
+  color: gold;
+  font-weight: bold;
+  text-align: center;
+}
+.header-item:nth-of-type(1) {
+  width:40%
+  border-left: ivory;
+  border-width: 10px;
+  border-style: hidden;
+}
+.header-item:nth-of-type(2){
+  width:60%
+  border-width: 10px;
+  border-style: dashed;
+}
+#header-image{
+  margin-bottom: 50px;
+  border-bottom: inset ivory 10px;
+  border-top: inset ivory 10px;
+  max-width:100%;
+}
+.header-button{
+ 
+  text-align:center;
+  font-size:large;
+  color: ivory;
+  padding-top: 10px;
+  padding-bottom:10px;
+  cursor: pointer;
+}
+
+
+.important {
+    color:blue;
+} 
+
+#about{
+  font-size:30px;
+}
+
+#news{
+  font-size:30px;
+}
+
+a:link {
+    color: black;
+    
+}
+  
+a:visited {
+    color: blue;
+}
+  
+a:hover {
+    color: red;
+}
+  
+a:active {
+    color: green;
+}
+
+/* Part 1: Navbar */
+
+/* General style rule set for all items in ul */
+.navbar ul {
+  list-style: none;
+  overflow:hidden;
+  position:fixed;
+  width:100%;
+  margin-top: -5px;
+  margin-bottom: 50px;
+  background-color:white;
+  opacity: 0.86;
+
+}
+
+/* Style rule set for individual li */
+.navbar ul li {
+  float:left;
+  margin: 10px;
+}
+
+
+/* Style rule set for individual li link */
+.navbar ul li a {
+  font-family: Arial;
+  color:#4ebeef;
+  text-align:center;
+  padding:10px;
+  font-size: 16px;
+  text-decoration: none;
+  display:block;
+}
+
+/* Style rule set for hovered link */
+.navbar ul li a:hover {
+  font-weight: bold;
+  color:gold;
+}
+
+
+
+
+/* Part 2: Flexbox */
+
+/* General style rule set for flex container */
+.flex-container {
+display: flex;
+flex-direction: row;
+gap: 20px;
+}
+
+
+/* Style rules for flex-item 1 */
+.flex-item:nth-of-type(1) {
+
+}
+
+/* Style rules for flex-item 2 */
+.flex-item:nth-of-type(2) {
+
+}
+
+/* Style rules for flex-item 3 */
+.flex-item:nth-of-type(3) {
+
+}
+
+
+/* Style set for all flex-items */
+.flex-item {
+  background: white;
+  color: black;
+  font-weight: bold;
+  text-align: center;
+}
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: ivory;
+  text-align:center;
+  opacity:1;
+  margin-top:10px;
+}
+
+.dark-mode {
+  background-color: darkblue;
+  color:white;
+  h1 { 
+    color:white;
+  }
+  #theme-button{
+    color: yellow;
+    background-color: darkblue;
+  }
+
+  .navbar ul {
+  background-color:blue;
+  }
+
+}
+
+#theme-button{
+  color: darkblue;
+  background-color: yellow;
+  border-radius:30px;
+
+}
+/*
+  Style Lists: Styles added to the ol or ul style rulesets affect the entire
+  list, while styles added to the li style ruleset affect individual list items
+
+ol {
+
+}
+
+ol li {
+
+}
+
+ul li {
+
+}
+
+/*
+  Style Buttons: Add style rules for any headings (h1-6),
+  paragraphs and links
+*/
